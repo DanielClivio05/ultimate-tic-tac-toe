@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultimate Tic-Tac-Toe</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%23%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Ultimate Tic-Tac-Toe</h1>
+      <p id="status" class="status" aria-live="polite"></p>
+    </header>
+
+    <div id="board" class="board" role="grid" aria-label="Ultimate tic-tac-toe board"></div>
+
+    <div class="controls">
+      <button id="new-game" type="button">New Game</button>
+      <details>
+        <summary>Rules</summary>
+        <ol>
+          <li>X goes first and can play anywhere.</li>
+          <li>After a move, your opponent must play on the same small board.</li>
+          <li>Three in a row on a small board wins that board.</li>
+          <li>If you are sent to a board that is won or full, you can play in any open board.</li>
+          <li>Win three small boards in a row to win the game.</li>
+        </ol>
+      </details>
+    </div>
+  </main>
+  <script type="module" src="ui.js"></script>
+</body>
+</html>
